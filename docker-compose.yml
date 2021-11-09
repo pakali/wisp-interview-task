@@ -1,0 +1,12 @@
+version: '3'
+services:
+  wisp:
+    build: ./backend
+    ports:
+        - "0.0.0.0:80:80"
+    networks:
+    - external
+networks:
+  external:
+    external: true
+
